@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://preview.redd.it/buying-dark-blade-soon-how-much-is-it-worth-image-unrelated-v0-3s6161a91ckc1.png?auto=webp&s=bca92f63638911cc3016f839ce4dff91f08d89b0'); /* Your image URL */
+    background-repeat: repeat; /* Makes the image repeat both horizontally and vertically */
+    background-position: top left; /* Starts tiling from the top left corner */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Card Layout */
+.card {
+    background: rgba(30, 30, 30, 0.8);  /* Slightly transparent dark background */
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Enlarged Text Area */
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background: #2a2a2a;
+    color: #fff;
+    resize: vertical;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Button Group */
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* File Input */
+input[type="file"] {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 8px;
+    background: #2a2a2a;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+/* Story Preview */
+.preview-card {
+    text-align: left;
+    padding: 25px;
+}
+
+#preview {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    white-space: pre-line;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Highlight Current Word */
+.highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+/* Additional Styles for PDF Pages */
+.pdf-page {
+    background: #2a2a2a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.pdf-page:hover {
+    background-color: #444;
+}
+
+.clickable-word {
+    cursor: pointer;
+    color: #4db8ff;
+}
+
+.clickable-word:hover {
+    text-decoration: underline;
+}

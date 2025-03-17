@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Narrator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📖</h1>
+
+        <div class="card">
+            <textarea id="story" rows="5" placeholder="Type or paste your story here..."></textarea>
+            <div class="controls">
+                <button onclick="playNarration()">▶ Play</button>
+                <button onclick="pauseNarration()">⏸ Pause</button>
+                <button onclick="resumeNarration()">▶ Resume</button>
+                <button onclick="stopNarration()">⏹ Stop</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <input type="file" id="fileInput" accept="application/pdf" onchange="handleFile()">
+            <button onclick="showPageCount()">📄 Pages</button>
+            <p id="pageCount"></p>
+        </div>
+
+        <div class="card preview-card">
+            <h2>📜 Story Preview</h2>
+            <div id="preview"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
